@@ -1,0 +1,36 @@
+<?php
+
+namespace Jscorptech;
+
+class ErrorCode
+{
+    const INTERNAL_SERVER_ERROR = 100;
+    const SYNTAX_ERROR = 101;
+    const ACCOUNT_LOCK = 102;
+    const EMPTY_CHANNEL = 103;
+    const INVALID_PRIORITY = 104;
+    const TOO_MUCH_IDS = 105;
+
+    const EMPTY_RECIPIENT = 202;
+    const EMPTY_EMAIL_ADDRESS = 204;
+    const EMPTY_MESSAGE_ID = 205;
+    const INVALID_VARIABLES = 206;
+
+    const INVALID_LOCALTIME = 301;
+    const INVALID_START_DATETIME = 302;
+    const INVALID_END_DATETIME = 303;
+    const INVALID_ALLOWED_STARTTIME = 304;
+    const INVALID_ALLOWED_ENDTIME = 305;
+    const INVALID_SEND_EVENLY = 306;
+
+    const EMPTY_ORIGINATOR = 401;
+    const EMPTY_APPLICATION = 402;
+    const EMPTY_TTL = 403;
+    const EMPTY_CONTENT = 404;
+    const CONTENT_ERROR = 405;
+    const INVALID_CONTENT = 406;
+    const INVALID_TTL = 407;
+    const INVALID_ATTACHED_FILES = 408;
+    const INVALID_RETRY_ATTEMPTS = 410;
+    const INVALID_RETRY_TIMEOUT = 411;
+}
