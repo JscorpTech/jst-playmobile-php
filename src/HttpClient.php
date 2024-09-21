@@ -59,6 +59,7 @@ class HttpClient implements ClientInterface
             'Content-Type: application/json',
             'Authorization: Basic ' . base64_encode($this->account->username . ':' . $this->account->password),
         ]);
+        curl_setopt($this->session, CURLOPT_RETURNTRANSFER, True);
 
         $response = curl_exec($this->session);
         $status = curl_getinfo($this->session, CURLINFO_HTTP_CODE);
